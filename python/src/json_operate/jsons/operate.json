@@ -1,0 +1,50 @@
+{
+    "dataList" : [
+        {
+            "action": "jump",
+            "url": "https://req.qubo.jp/qubo/form/KZTxekEm"
+        },
+        {
+            "action": "input",
+            "cssSelector": "[name='col__521__2__0__0']",
+            "elementType": "text",
+            "value": "サンプルコード"
+        },
+        {
+            "action": "input",
+            "cssSelector": "[name='col__523__9__0__0']",
+            "elementType": "text",
+            "value": "サンプル太郎"
+        },
+        {
+            "action": "input",
+            "cssSelector": "[name='col__524__1__0__0']",
+            "elementType": "text",
+            "value": "株式会社サンプル"
+        },
+        {
+            "action": "input",
+            "cssSelector": "[name='col__525__13__0__0']",
+            "elementType": "text",
+            "value": "1234567"
+        },
+        {
+            "action": "input",
+            "cssSelector": "[name='col__525__13__1__0']",
+            "elementType": "text",
+            "value": "東京都"
+        },
+        {
+            "action": "input",
+            "cssSelector": "[name='col__525__13__2__0']",
+            "elementType": "text",
+            "value": "千代田区１－１－１"
+        },
+        {
+            "action": "input",
+            "cssSelector": "[name='col__769__16__0__0']",
+            "elementType": "check",
+            "value": true
+        }
+    ]
+}

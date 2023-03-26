@@ -1,0 +1,88 @@
+■環境
+python（作成時3.11）
+selenium
+webDriverManager
+chromeDriver(多分インストール不要)
+
+
+環境構築手順は調べれば導入できるレベルなので特に作ってません
+（chromeのドライバーはseleniumに含まれているはず）
+webDriberManagerはchromeのドライバーを最新化するのに使用します。
+
+
+■実行方法
+srcフォルダ内で、pythonコマンドで以下のように実行します
+python json_operate_main.py [ファイルパス(絶対パスor相対パス)]
+実行例
+python json_operate_main.py src/json_operate/jsons/operate.json
+
+このファイルパスにjsonデータを指定することで実行します。
+
+
+■取込データ定義（jsonファイル）
+
+以下の定義を格納した配列で動かします。
+必ず以下のようにdataListの定義内に設定する必要があります。
+{
+    "dataList":[
+        {
+            "action": "jump",
+            "url": "https://req.qubo.jp/qubo/form/KZTxekEm" // 飛びたいページ
+        },
+    ]
+}
+
+
+■ページを開く場合
+{
+    "action": "jump",
+    "url": "https://req.qubo.jp/qubo/form/KZTxekEm"
+},
+
+■ボタンをクリックする場合
+{
+    "action": "click",
+    "cssSelector": "[name='button_sample']",
+},
+
+■入力欄（テキストボックス/テキストエリア）に入力する場合
+{
+    "action": "input",
+    "cssSelector": "[name='sample_text']",
+    "elementType": "text",
+    "value": "サンプルコード"
+},
+
+■入力欄（テキストボックス/テキストエリア）に追加入力する場合
+{
+    "action": "input",
+    "cssSelector": "[name='sample_text']",
+    "elementType": "text",
+    "value": "（追加）",
+    "is_add": true
+},
+
+■入力欄（コンボボックス）に入力する場合
+{
+    "action": "input",
+    "cssSelector": "[name='sample_combo']",
+    "elementType": "select",
+    "value": "3"
+},
+
+■入力欄（ラジオボタン）に入力する場合
+{
+    "action": "input",
+    "cssSelector": "[name='sample_radio']",
+    "elementType": "radio",
+    "name": "sample_radio",
+    "value": "3"
+},
+
+■入力欄（チェックボックス）に入力する場合
+{
+    "action": "input",
+    "cssSelector": "[name='sample_combo']",
+    "elementType": "check",
+    "value": "3"
+},
