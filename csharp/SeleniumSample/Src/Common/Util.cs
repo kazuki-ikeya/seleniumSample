@@ -1,0 +1,10 @@
+
+namespace Common
+{
+
+    class CommonUtil
+    {
+
+    }
+
+}
